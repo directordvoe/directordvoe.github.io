@@ -618,7 +618,42 @@
       <!--     *********   END  Modal Notice   *********      -->
 
 
+      <!--     ********* Special-offer Modal   *********      -->
 
+<div class="modal fade" id="Special-offer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notice">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+      <i class="now-ui-icons ui-1_simple-remove"></i>
+    </button>
+        <h5 class="modal-title" id="myModalLabel">Специальное предложение!</h5>
+      </div>
+      <div class="modal-body">
+        <div class="instruction">
+            <div class="row">
+                <div class="col-md-8">
+                     <strong>В брачном агентстве Двое наступила весна!</strong>
+                     <p class="description">Скажите кодовое слово "Весна 2019" при заключении договора и получите скидку в <a href="http://www.creative-tim.com/"><b>20%</b></a>.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="picture">
+                        <img src="assets/img/sale.png" alt="Thumbnail Image"  class="rounded img-raised">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Акция длится до 8 марта и распостроняется только на "Базовый" абонимент.</p>
+      </div>
+      <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-info btn-round" data-dismiss="modal">Отлично!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--     ********* END Special-offer Modal   *********      -->
 
 <footer class="footer footer-default" >
     
@@ -692,8 +727,6 @@
 <script type="text/javascript" src="assets/js/datetime.js"></script>
 
 
-<!--  Jquery    -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <!--  Back to top button    -->
      <script type="text/javascript" src="assets/js/backtotop.js"></script>
 
@@ -727,11 +760,21 @@
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
+
+<script>
+	$('#Special-offer').modal('show');
+
+	setTimeout(function() {
+	    $('#Special-offer').modal('show');
+	}, 7000);
+</script>
 <!-- /WhatsHelp.io widget -->
 
 <script>
-    $('#btn-center-modal').click(function() {
-       $('#noticemodal').modal('show');
+    setTimeout(function() {
+        $('#btn-center-modal').click(function() {
+           $('#noticemodal').modal('show');
+        });
     }, 2000);
 </script>
     </body>
